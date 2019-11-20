@@ -1,7 +1,19 @@
-{
+import React, { Component } from 'react';
+import ParticlesJS from 'react-particles-js';
+import '../assets/css/particles.css';
+
+class Particles extends Component {
+    render() {
+        return <ParticlesJS className="particles" params={paramsParticles} />
+    }
+}
+
+export default Particles;
+
+const paramsParticles = {
   "particles": {
     "number": {
-      "value": 120,
+      "value": 80,
       "density": {
         "enable": true,
         "value_area": 800
@@ -82,14 +94,14 @@
     },
     "modes": {
       "grab": {
-        "distance": 200,
+        "distance": 300,
         "line_linked": {
           "opacity": 0.6
         }
       },
       "bubble": {
         "distance": 200,
-        "size": 20,
+        "size": 30,
         "duration": 2,
         "opacity": 8,
         "speed": 1
